@@ -84,7 +84,15 @@ const Cart = (props) =>
 
   const isSubmittingModalContent = <p>Sending Order Data</p>
 
-  const didSubmitModalContent = <p>Successfully sent the order!</p>
+  const didSubmitModalContent =
+    <>
+      <p>Successfully sent the order!</p>
+      <div className={classes.actions}>
+        <button className={classes['button--alt']} onClick={props.onClose}>
+          Close
+        </button>
+      </div>
+    </>
 
   return (
     <Modal onClose={props.onClose}>
