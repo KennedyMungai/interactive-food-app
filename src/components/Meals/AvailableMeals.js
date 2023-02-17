@@ -38,7 +38,15 @@ const AvailableMeals = () =>
       setIsLoading(false)
     }
 
-    fetchmeals()
+    try
+    {
+      fetchmeals()
+    }
+    catch ()
+    {
+      setIsLoading(false)
+      setHttpError(error)
+    }
   }, [])
 
   if (isLoading)
