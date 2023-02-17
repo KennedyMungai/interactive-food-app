@@ -4,6 +4,7 @@ import classes from './Checkout.module.css'
 const Checkout = (props) =>
 {
     const nameInputRef = useRef()
+    const streetInputRef = useRef()
 
     const confirmHandler = (e) => 
     {
