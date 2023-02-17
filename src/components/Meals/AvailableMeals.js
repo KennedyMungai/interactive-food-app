@@ -42,7 +42,7 @@ const AvailableMeals = () =>
     {
       fetchmeals()
     }
-    catch ()
+    catch (error)
     {
       setIsLoading(false)
       setHttpError(error.message)
