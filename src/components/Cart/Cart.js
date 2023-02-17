@@ -31,7 +31,7 @@ const Cart = (props) =>
     setIsCheckout(true)
   }
 
-  const submitOrderHandler = (userData) =>
+  const submitOrderHandler = async (userData) =>
   {
     setIsSubmitting(true)
 
