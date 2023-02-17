@@ -3,6 +3,8 @@ import classes from './Checkout.module.css'
 
 const Checkout = (props) =>
 {
+    const nameInputRef = useRef()
+
     const confirmHandler = (e) => 
     {
         e.preventDefault()
