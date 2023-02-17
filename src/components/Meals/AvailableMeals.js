@@ -46,40 +46,39 @@ const AvailableMeals = () =>
         setIsLoading(false)
         setHttpError(error.message)
       })
-  }
   }, [])
 
-if (isLoading)
-{
-  return <section className={classes.mealsLoading}>
-    <p>Loading...</p>
-  </section>
-}
+  if (isLoading)
+  {
+    return <section className={classes.mealsLoading}>
+      <p>Loading...</p>
+    </section>
+  }
 
-if (httpError)
-{
-  return <section className={classes.mealsError}>
-    <p>{httpError}</p>
-  </section>
-}
+  if (httpError)
+  {
+    return <section className={classes.mealsError}>
+      <p>{httpError}</p>
+    </section>
+  }
 
-const mealsList = meals.map((meal) => (
-  <MealItem
-    key={meal.id}
-    id={meal.id}
-    name={meal.name}
-    description={meal.description}
-    price={meal.price}
-  />
-));
+  const mealsList = meals.map((meal) => (
+    <MealItem
+      key={meal.id}
+      id={meal.id}
+      name={meal.name}
+      description={meal.description}
+      price={meal.price}
+    />
+  ));
 
-return (
-  <section className={classes.meals}>
-    <Card>
-      <ul>{mealsList}</ul>
-    </Card>
-  </section>
-);
+  return (
+    <section className={classes.meals}>
+      <Card>
+        <ul>{mealsList}</ul>
+      </Card>
+    </section>
+  );
 };
 
 export default AvailableMeals;
