@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import classes from './Checkout.module.css'
 
+const isEmpty = value => value.trim() === ''
+const isNotFiveChars = value => value.trim().length > 5
+
 const Checkout = (props) =>
 {
     const nameInputRef = useRef()
