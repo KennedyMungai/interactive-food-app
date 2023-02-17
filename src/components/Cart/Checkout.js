@@ -27,9 +27,9 @@ const Checkout = (props) =>
 
         const formIsValid = enteredNameIsValid && enteredStreetIsValid && enteredCityIsValid && enteredPostalCodeIsValid
 
-        if (formIsValid)
+        if (!formIsValid)
         {
-            // Submit the cart data
+            return
         }
     }
 
