@@ -11,6 +11,11 @@ const Checkout = (props) =>
     const confirmHandler = (e) => 
     {
         e.preventDefault()
+
+        const enteredNamme = nameInputRef.current.value
+        const enteredStreet = streetInputRef.current.value
+        const enteredPostalCode = postalCodeInputRef.current.value
+        const enteredCity = cityInputRef.current.value
     }
 
     return (
