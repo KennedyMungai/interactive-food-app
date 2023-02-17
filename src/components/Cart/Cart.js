@@ -84,6 +84,8 @@ const Cart = (props) =>
 
   const isSubmittingModalContent = <p>Sending Order Data</p>
 
+  const didSubmitModalContent = <p>Successfully sent the order!</p>
+
   return (
     <Modal onClose={props.onClose}>
       {!isSubmitting && cartModalContent}
