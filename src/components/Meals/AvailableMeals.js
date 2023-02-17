@@ -34,6 +34,12 @@ const AvailableMeals = () =>
     fetchmeals()
   }, [])
 
+  if (isLoading)
+  {
+    return <section>
+      <p>Loading...</p>
+    </section>
+  }
 
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
