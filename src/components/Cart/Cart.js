@@ -27,7 +27,7 @@ const Cart = (props) =>
 
   const orderHandler = () => 
   {
-
+    setIsCheckout(true)
   }
 
   const cartItems = (
