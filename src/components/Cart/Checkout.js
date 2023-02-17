@@ -26,6 +26,11 @@ const Checkout = (props) =>
         const enteredPostalCodeIsValid = !isFiveChars(enteredPostalCode)
 
         const formIsValid = enteredNameIsValid && enteredStreetIsValid && enteredCityIsValid && enteredPostalCodeIsValid
+
+        if (formIsValid)
+        {
+            // Submit the cart data
+        }
     }
 
     return (
