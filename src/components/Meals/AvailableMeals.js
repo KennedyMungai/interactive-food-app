@@ -7,7 +7,7 @@ const AvailableMeals = () =>
 {
   const [meals, setMeals] = useState()
   const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState()
+  const [httpError, setHttpError] = useState()
 
   useEffect(async () =>
   {
