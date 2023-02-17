@@ -51,14 +51,14 @@ const AvailableMeals = () =>
 
   if (isLoading)
   {
-    return <section className={classes.MealsLoading}>
+    return <section className={classes.mealsLoading}>
       <p>Loading...</p>
     </section>
   }
 
   if (httpError)
   {
-    return <section className={classes.MealsError}>
+    return <section className={classes.mealsError}>
       <p>{httpError}</p>
     </section>
   }
