@@ -8,6 +8,8 @@ import Checkout from './Checkout';
 
 const Cart = (props) =>
 {
+  const [isCheckout, setIsCheckout] = useState(false)
+
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
