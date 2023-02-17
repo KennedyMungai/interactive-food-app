@@ -15,10 +15,15 @@ const Checkout = (props) =>
     {
         e.preventDefault()
 
-        const enteredNamme = nameInputRef.current.value
+        const enteredName = nameInputRef.current.value
         const enteredStreet = streetInputRef.current.value
         const enteredPostalCode = postalCodeInputRef.current.value
         const enteredCity = cityInputRef.current.value
+
+        const enteredNameIsValid = !isEmpty(enteredName)
+        const enteredStreetIsValid = !isEmpty(enteredStreet)
+        const enteredCityIsValid = !isEmpty(enteredCity)
+        const enteredPostalCodeIsValid = !isNotFiveChars(enteredPostalCode)
     }
 
     return (
