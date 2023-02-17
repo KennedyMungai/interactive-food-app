@@ -40,7 +40,7 @@ const AvailableMeals = () =>
 
     try
     {
-      fetchmeals()
+      await fetchmeals()
     }
     catch (error)
     {
