@@ -52,7 +52,7 @@ const Cart = (props) =>
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      <Checkout />
+      {isCheckout && <Checkout />}
       <div className={classes.actions}>
         <button className={classes['button--alt']} onClick={props.onClose}>
           Close
