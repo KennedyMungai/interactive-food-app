@@ -6,6 +6,7 @@ const Checkout = (props) =>
     const nameInputRef = useRef()
     const streetInputRef = useRef()
     const postalCodeInputRef = useRef()
+    const cityInputRef = useRef()
 
     const confirmHandler = (e) => 
     {
