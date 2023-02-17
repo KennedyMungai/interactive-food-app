@@ -90,7 +90,7 @@ const Cart = (props) =>
     <Modal onClose={props.onClose}>
       {!isSubmitting && !didSubmit && cartModalContent}
       {isSubmitting && !didSubmit && isSubmittingModalContent}
-      {didSubmit && didSubmitModalContent}
+      {didSubmit && !isSubmitting && didSubmitModalContent}
     </Modal>
   );
 };
