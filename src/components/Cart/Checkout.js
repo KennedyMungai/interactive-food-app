@@ -45,6 +45,8 @@ const Checkout = (props) =>
         {
             return
         }
+
+        props.onConfirm()
     }
 
     const nameControlClasses = `${classes.control} ${formInputsValidity.name ? '' : classes.invalid}`
