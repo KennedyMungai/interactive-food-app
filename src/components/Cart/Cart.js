@@ -71,6 +71,17 @@ const Cart = (props) =>
     {hasItems && <button className={classes.button} onClick={orderHandler}>Order</button>}
   </div>
 
+  const cartModalContent =
+    <>
+      {cartItems}
+      <div className={classes.total}>
+        <span>Total Amount</span>
+        <span>{totalAmount}</span>
+      </div>
+      {isCheckout && <Checkout onConfirm={submitOrderHandler} onCancel={props.onClose} />}
+      {!isCheckout && modalActions}
+    </>
+
   return (
     <Modal onClose={props.onClose}>
       {cartItems}
