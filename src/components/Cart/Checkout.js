@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import classes from './Checkout.module.css'
 
 const isEmpty = value => value.trim() === ''
