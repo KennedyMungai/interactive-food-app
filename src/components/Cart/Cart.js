@@ -30,6 +30,11 @@ const Cart = (props) =>
     setIsCheckout(true)
   }
 
+  const submitOrderHandler = (userData) =>
+  {
+
+  }
+
   const cartItems = (
     <ul className={classes['cart-items']}>
       {cartCtx.items.map((item) => (
