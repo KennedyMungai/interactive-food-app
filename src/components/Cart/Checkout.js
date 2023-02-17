@@ -45,8 +45,6 @@ const Checkout = (props) =>
         {
             return
         }
-
-
     }
 
     return (
