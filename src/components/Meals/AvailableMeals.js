@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 const AvailableMeals = () =>
 {
   const [meals, setMeals] = useState()
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(async () =>
   {
