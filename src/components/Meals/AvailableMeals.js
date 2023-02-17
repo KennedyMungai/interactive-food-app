@@ -1,9 +1,12 @@
 import Card from '../UI/Card';
 import MealItem from './MealItem/MealItem';
 import classes from './AvailableMeals.module.css';
+import { useEffect } from 'react';
 
 const AvailableMeals = () =>
 {
+  fetch()
+
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
