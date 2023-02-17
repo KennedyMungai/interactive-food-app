@@ -45,7 +45,7 @@ const AvailableMeals = () =>
     catch ()
     {
       setIsLoading(false)
-      setHttpError(error)
+      setHttpError(error.message)
     }
   }, [])
 
