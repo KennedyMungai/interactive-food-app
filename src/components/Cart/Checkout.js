@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import classes from './Checkout.module.css'
 
 const isEmpty = value => value.trim() === ''
-const isNotFiveChars = value => value.trim().length < 5
+const isFiveChars = value => value.trim().length !== 5
 
 const Checkout = (props) =>
 {
@@ -23,7 +23,7 @@ const Checkout = (props) =>
         const enteredNameIsValid = !isEmpty(enteredName)
         const enteredStreetIsValid = !isEmpty(enteredStreet)
         const enteredCityIsValid = !isEmpty(enteredCity)
-        const enteredPostalCodeIsValid = !isNotFiveChars(enteredPostalCode)
+        const enteredPostalCodeIsValid = !isFiveChars(enteredPostalCode)
     }
 
     return (
