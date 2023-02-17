@@ -17,6 +17,10 @@ const Checkout = () =>
                 <label htmlFor="postal">Postal Code</label>
                 <input type="text" id="postal" />
             </div>
+            <div className={classes.control}>
+                <label htmlFor="city">City</label>
+                <input type="text" id="city" />
+            </div>
         </form>
     )
 }
