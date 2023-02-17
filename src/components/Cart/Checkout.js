@@ -21,6 +21,7 @@ const Checkout = () =>
                 <label htmlFor="city">City</label>
                 <input type="text" id="city" />
             </div>
+            <button>Confirm</button>
         </form>
     )
 }
