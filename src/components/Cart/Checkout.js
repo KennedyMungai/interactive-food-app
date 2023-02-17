@@ -6,6 +6,13 @@ const isFiveChars = value => value.trim().length !== 5
 
 const Checkout = (props) =>
 {
+    const [formInputsValidity, setFormInputsValidity] = useState({
+        name: true,
+        street: true,
+        city: true,
+        postalCode: true
+    })
+
     const nameInputRef = useRef()
     const streetInputRef = useRef()
     const postalCodeInputRef = useRef()
