@@ -49,22 +49,22 @@ const Checkout = (props) =>
 
     return (
         <form onSubmit={confirmHandler}>
-            <div className={classes.control}>
+            <div className={`${classes.control} ${formInputsValidity.name ? '' : classes.invalid}`}>
                 <label htmlFor="name">Your Name</label>
                 <input type="text" id="name" ref={nameInputRef} />
                 {!formInputsValidity.name && <p>Please enter a valid name!</p>}
             </div>
-            <div className={classes.control}>
+            <div className={`${classes.control} ${formInputsValidity.street ? '' : classes.invalid}`}>
                 <label htmlFor="street">Street</label>
                 <input type="text" id="street" ref={streetInputRef} />
                 {!formInputsValidity.street && <p>Please enter a valid street name!</p>}
             </div>
-            <div className={classes.control}>
+            <div className={`${classes.control} ${formInputsValidity.postalCode ? '' : classes.invalid}`}>
                 <label htmlFor="postal">Postal Code</label>
                 <input type="text" id="postal" ref={postalCodeInputRef} />
                 {formInputsValidity.postalCode && <p>Please enter a valid postal code</p>}
             </div>
-            <div className={classes.control}>
+            <div className={`${classes.city} ${formInputsValidity.city ? '' : classes.invalid}`}>
                 <label htmlFor="city">City</label>
                 <input type="text" id="city" ref={cityInputRef} />
                 {formInputsValidity.city && <p>Please enter a valid city</p>}
