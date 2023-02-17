@@ -23,6 +23,11 @@ const Cart = (props) =>
     cartCtx.addItem(item);
   };
 
+  const orderHandler = () => 
+  {
+
+  }
+
   const cartItems = (
     <ul className={classes['cart-items']}>
       {cartCtx.items.map((item) => (
