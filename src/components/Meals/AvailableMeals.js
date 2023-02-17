@@ -41,7 +41,7 @@ const AvailableMeals = () =>
     </section>
   }
 
-  const mealsList = DUMMY_MEALS.map((meal) => (
+  const mealsList = meals.map((meal) => (
     <MealItem
       key={meal.id}
       id={meal.id}
