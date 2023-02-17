@@ -6,12 +6,10 @@ import { useEffect, useState } from 'react';
 const AvailableMeals = () =>
 {
   const [meals, setMeals] = useState()
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(async () =>
   {
-    setIsLoading(true)
-
     const fetchmeals = async () =>
     {
       const response = await fetch('https://simple-react-backend-default-rtdb.firebaseio.com/meals.json')
