@@ -56,6 +56,13 @@ const AvailableMeals = () =>
     </section>
   }
 
+  if (httpError)
+  {
+    return <section className={classes.MealsLoading}>
+      <p>{httpError}</p>
+    </section>
+  }
+
   const mealsList = meals.map((meal) => (
     <MealItem
       key={meal.id}
