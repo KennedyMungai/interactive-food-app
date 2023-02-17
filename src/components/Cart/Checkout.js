@@ -24,6 +24,8 @@ const Checkout = (props) =>
         const enteredStreetIsValid = !isEmpty(enteredStreet)
         const enteredCityIsValid = !isEmpty(enteredCity)
         const enteredPostalCodeIsValid = !isFiveChars(enteredPostalCode)
+
+        const formIsValid = enteredNameIsValid && enteredStreetIsValid && enteredCityIsValid && enteredPostalCodeIsValid
     }
 
     return (
