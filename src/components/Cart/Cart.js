@@ -82,6 +82,8 @@ const Cart = (props) =>
       {!isCheckout && modalActions}
     </>
 
+  const isSubmittingModalContent = <p>Sending Order Data</p>
+
   return (
     <Modal onClose={props.onClose}>
       {cartModalContent}
