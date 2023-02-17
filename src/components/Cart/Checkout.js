@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useReducer, useRef } from 'react'
 import classes from './Checkout.module.css'
 
 const isEmpty = value => value.trim() === ''
@@ -31,6 +31,8 @@ const Checkout = (props) =>
         {
             return
         }
+
+
     }
 
     return (
